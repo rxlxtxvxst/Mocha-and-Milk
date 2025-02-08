@@ -2,12 +2,12 @@ var started = false;
 var answerCall = false;
 var sound = new Audio();
 
-var song = new Audio("./sounds/song.mp3");
+var song = new Audio("song.mp3");
 song.preload = "auto";
 song.volume = 0.5;
 
 function playSound(fileName) {
-    sound = new Audio("./sounds/"+fileName+".mp3");
+    sound = new Audio("fileName+".mp3");
     sound.volume = 0.5;
 
     // only loop audio if its ring.mp3
@@ -53,7 +53,7 @@ $(".call-yes").click(function() {
     playSound("yay");
 
     // change image, hide both buttons
-    $(".dudu").attr("src", ".images/dudu rose.jpg")
+    $(".dudu").attr("src", "dudu rose.jpg")
     $(".call-yes").css("display", "none");
     $(".call-no").css("display", "none");
 
@@ -69,7 +69,7 @@ $(".call-no").click(function() {
     playSound("yell");
 
     // change image, hide no button
-    $(".dudu").attr("src", "./images/dudu no.gif")
+    $(".dudu").attr("src", "dudu no.gif")
     $(".call-no").css("display", "none");
 });
 
@@ -104,7 +104,7 @@ $(function() {
 $(".val-yes").click(function() {
     // change header, image, and play song
     $("h1").text("YAY SEE YOU ON THE 14TH BABY!");
-    $(".dudu").attr("src", "./images/hug.gif");
+    $(".dudu").attr("src", "dudu hug.gif");
 
     sound.pause();
     sound.currentTime = 0;
@@ -125,7 +125,7 @@ function generatePhrases() {
 
 // choose random gif from a list
 function randomDudu() {
-    gifList = ["./images/dudu chase.gif", "./images/dudu drag.gif", "./images/dudu trash.gif", "./images/dudu write.gif"];
+    gifList = ["dudu chase.gif", "dudu drag.gif", "dudu trash.gif", "dudu write.gif"];
     var j = Math.floor(Math.random()*gifList.length);
     $(".dudu").attr("src", gifList[j]);
 }
