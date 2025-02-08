@@ -53,7 +53,7 @@ $(".call-yes").click(function() {
     playSound("yay");
 
     // change image, hide both buttons
-    $(".dudu").attr("src", "dudu rose.jpg")
+    $(".dudu").attr("src", "dudu rose.gif")
     $(".call-yes").css("display", "none");
     $(".call-no").css("display", "none");
 
