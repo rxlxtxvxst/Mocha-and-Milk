@@ -7,7 +7,7 @@ song.preload = "auto";
 song.volume = 0.5;
 
 function playSound(fileName) {
-    sound = new Audio("ring.mp3");
+    sound = new Audio(fileName+".mp3");
     sound.volume = 0.5;
 
     // only loop audio if its ring.mp3
