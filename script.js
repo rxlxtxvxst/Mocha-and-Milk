@@ -103,7 +103,7 @@ $(function() {
 // final yes button
 $(".val-yes").click(function() {
     // change header, image, and play song
-    $("h1").text("YAY SEE YOU ON THE 14TH BABY!");
+    $("h1").text("YAY SEE YOU ON THE 14TH MY LOVE!");
     $(".dudu").attr("src", "dudu hug.gif");
 
     sound.pause();
